@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senior Design Project</title>
+    <style>
+        :root {
+            --deep-tech-obsidian: #0d1117;
+            --chassis-slate: #161b22;
+            --spectrum-amber: #ffb000;
+            --active-digital-ir-green: #66bf2f;
+            --signal-white: #f0f6fc;
+        }
+
+        body {
+            margin: 0;
+            background-color: var(--deep-tech-obsidian);
+            color: var(--signal-white);
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+        }
+
+        .top-bar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 25px;
+            background-color: var(--deep-tech-obsidian);
+            border-bottom: 1px solid var(--spectrum-amber);
+        }
+
+        .top-bar .brand {
+            color: var(--signal-white);
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .top-bar nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        .top-bar nav a {
+            color: var(--signal-white);
+            text-decoration: none;
+        }
+
+        .top-bar nav a:hover,
+        .top-bar nav a:focus {
+            color: var(--spectrum-amber);
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .top-bar {
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .top-bar nav {
+                flex-wrap: wrap;
+                gap: 12px 20px;
+            }
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: var(--chassis-slate);
+            border-bottom: 2px solid var(--spectrum-amber);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 42px;
+        }
+
+        header h2 {
+            border-bottom: none;
+            padding-bottom: 0;
+            color: var(--signal-white);
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 25px;
+        }
+
+        section {
+            margin-bottom: 45px;
+        }
+
+        h2 {
+            font-size: 26px;
+            color: var(--signal-white);
+            border-bottom: 1px solid var(--spectrum-amber);
+            padding-bottom: 8px;
+        }
+
+        .members {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .member {
+            background-color: var(--chassis-slate);
+            border: 1px solid var(--signal-white);
+            padding: 15px 20px;
+            min-width: 180px;
+        }
+
+        .documents a {
+            display: block;
+            color: var(--signal-white);
+            text-decoration: none;
+            background-color: var(--chassis-slate);
+            border: 1px solid var(--signal-white);
+            padding: 12px 15px;
+            margin: 10px 0;
+        }
+
+        .documents a:hover {
+            color: var(--spectrum-amber);
+            border-color: var(--spectrum-amber);
+        }
+
+        footer {
+            text-align: center;
+            border-top: 1px solid var(--spectrum-amber);
+            padding: 25px;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+
+        .mode-visible {
+            border-color: var(--spectrum-amber);
+        }
+
+        .mode-visible h2 {
+            color: var(--spectrum-amber);
+            border-color: var(--spectrum-amber);
+        }
+
+        .mode-near-ir {
+            border-color: var(--active-digital-ir-green);
+        }
+
+        .mode-near-ir h2 {
+            color: var(--active-digital-ir-green);
+            border-color: var(--active-digital-ir-green);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top-bar">
+        <a class="brand" href="#home">U.K.V.S.</a>
+        <nav aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#documents">Documents</a>
+            <a href="#team">Team</a>
+        </nav>
+    </div>
+
+    <header id="home">
+    <h1>U.K.V.S</h1>
+    <h2>Universal Knight Vision Scope</h2>
+    <p>Senior Design Fall 2026 - Spring 2027 | Group 5</p>
+    </header>
+
+    <h2>Project Overview</h2>
+    <p>
+        The Universal Knight Vision Scope (U.K.V.S.) is an optical device designed to
+        enhance visibility in low-light conditions. It utilizes advanced imaging technology
+        to provide clear and detailed visuals, making it ideal for various applications
+        such as security, surveillance, and outdoor activities. The U.K.V.S. is compact,
+        lightweight, and user-friendly, ensuring that users can easily operate it in
+        different environments. The device is equipped with features such as adjustable
+        brightness and a durable design to withstand harsh conditions. test
+    </p>
+
+    <h2 id="team">Group Members</h2>
+    <ul>
+        <li>Egor Shevchenko</li>
+        <li>James Flynn</li>
+        <li>Rebecca Brians</li>
+        <li>Dominic Alexis</li>
+    </ul>
+
+    <h2>Reviewers</h2>
+    <ul>
+        <li>Dr. Stephen Eikenberry</li>
+        <li>Dr. Enxia Zhang</li>
+        <li>Dr. Yannick Salamin</li>
+        <li>Advisor 4</li>
+    </ul>
+
+    <h2>Advisors</h2>
+    <ul>
+        <li>Dr. Chun Yong-Chan</li>
+        <li>Dr. Paul Leisher</li>
+    </ul>
+
+    <!-- <h2>Project Description</h2>
+    <p>
+        Our senior design project is a [brief description of your project].
+        The goal of the project is to [main goal]. The system will [describe
+        the major functions or features]. The project combines [relevant
+        engineering fields or technologies] to develop and demonstrate a
+        functional prototype that meets the project's requirements.
+    </p> -->
+
+    <!-- <h2>Sponsorship</h2>
+    <p>
+        This project is sponsored by [Sponsor Name].
+        Sponsor Contact: [Contact Name], [Contact Email]
+    </p> -->
+
+    <h2 id="documents">Divide and Conquer Document (SD1)</h2>
+    <p>
+        <a href="Divide&Conquer - Live Copy.pdf">View the Divide and Conquer Document (SD1)</a>
+    </p>
+
+</body>
+</html>
+
